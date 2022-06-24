@@ -1,0 +1,81 @@
+body {
+  background-color: gray; /*Define a cor do background*/
+  margin: 0; /*Define que o body terá a margin de valor 0*/
+}
+
+main {
+  width: 70%; /*Define que a largura do main será de 70%*/
+  display: table; /*Define que o display será em table (bloco dimensionados)*/
+  margin: 100px auto 0 auto;
+  /*a propriedade margin recebe 4 valores, sendo assim evitamos de digitar as 
+  margins: top, buttom, left, right. Economizando código.*/
+}
+
+.card-container {
+  width: 270px;
+  display: table; /*faz com que o elemento tenha uma altura dinâmica*/
+  float: left;
+  margin: 60px 60px 0 0;
+}
+
+.card {
+  width: 100%;
+  display: table; /*Comando diz que a altura será dinâmica*/
+  background-color: aliceblue;
+  border-radius: 8px;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05);
+  /*box shadow é o que dá um aspecto tridimensional para nosso card*/
+  box-sizing: border-box; /*esse comando diz que todos os itens que participam desse card
+  deverão respeitar as bordas.*/
+}
+
+.card img {
+  width: 90%; /*largura de 100% da div card.*/
+  max-width: 90%; /*largura máxima*/
+  height: auto; /*Altura automatica, muda o tamanho de acordo com max widith*/
+  border-radius: 6px; /*borda da imagem*/
+  display: block; /*Determina que a imagem irá ficar bloqueada e parada no mesmo local do card*/
+  margin: 13.5px auto 0 auto;
+}
+/**/
+
+.card .card-body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px; /*tamanho da fonte dos textos*/
+  font-weight: 800; /**/
+  line-height: 35px; /*Diz que o texto irá ficar centralizado em uma linha de 35px*/
+  color: #9012fe;
+  margin: 0;
+}
+
+.card .card-body p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 20px; /*Define que o tamanho da linha onde o texto ficará terá 20 px*/
+  color: #afafaf;
+  font-weight: bold;
+  display: table;
+}
+
+.card-footer {
+  width: 100%;
+  display: table;
+}
+
+/* BOTÕES */
+.btn {
+  width: auto;
+  height: 40px;
+  display: inline-flex;
+  background-color: #9012fe;
+  color: white;
+  font-family: 16px;
+  text-transform: uppercase; /*Essa propriedade faz com que todas letras fiquem maiusculas.*/
+  line-height: 40px; /*A linha de baixo do botão tera o tamanho de 40 pixels*/
+  text-decoration: none; /*Esse comando tira o Underline da palavra.*/
+  text-align: center; /*Centraliza os itens*/
+  padding: 0 30px;
+  margin-bottom: 40px; /*margem da parte de baixo*/
+  border-radius: 4px;
+  box-sizing: border-box; /*Centralizar dentro da div pai*/
+}
